@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecs Fin</title>
+
+    <!-- load css -->
+    <link href="./simple_tabs.css" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('./bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+            background-size: cover;
+        }
+        </style>
+        <h1>ECS FIN CORP</h1>
+        <br>
+        <img src="logo.jpg" alt="ECS Fin Logo" style="width:900px;height:200px;">
+
+<div style="padding: 20px">
+
+    <div class="toggle-menu">
+        <div class="toggle-menu-item" data-togglegroup="primaryTabs" data-toggleid="hello"><label>HOME</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="primaryTabs" data-toggleid="blah"><label>CAREERS</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="primaryTabs" data-toggleid="foo"><label>EVENTS</label></div>
+    </div>
+
+    <div class="d-block" data-togglegroup="primaryTabs" data-toggleview="hello">
+        <h1>About</h1>
+        <p>ECS Fin is an engineering enterprise that specializes in process optimization. 
+            We design software solutions with a systems approach to transaction processing.
+             Founded in 1999 as a consulting firm, ECS advised many fortune 100 companies, 
+            coordinating business divisions and technology groups.</p>
+    </div>
+
+    <div class="d-none" data-togglegroup="primaryTabs" data-toggleview="blah">
+        <h1>New Oppenings</h1>
+
+        <div class="toggle-menu">
+            <div class="toggle-menu-item" data-togglegroup="nestedTabs" data-toggleid="subTab1"><label>Application Support</label></div>
+            <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="nestedTabs" data-toggleid="subTab2"><label>Associate software engineer</label></div>
+            <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="nestedTabs" data-toggleid="subTab3"><label>Associate deployment engineer</label></div>
+        </div>
+
+        <div class="d-block" data-togglegroup="nestedTabs" data-toggleview="subTab1">
+            <h2>Eligibily</h2>
+            <p>bsc, bca/MCA, BE/Btech</p>
+            <a href="https://ecsfin.com/careers/">Apply Now</a>
+        </div>
+
+        <div class="d-none" data-togglegroup="nestedTabs" data-toggleview="subTab2">
+            <h2>Eligibily</h2>
+            <p>MCA, BE/Btech</p>
+            <a href="https://ecsfin.com/careers/">Apply Now</a>
+        </div>
+
+        <div class="d-none" data-togglegroup="nestedTabs" data-toggleview="subTab3">
+            <h2>Eligibily</h2>
+            <p>MCA, BE/Btech</p>
+            <a href="https://ecsfin.com/careers/">Apply Now</a>
+        </div>
+
+    </div>
+
+    <div class="d-none" data-togglegroup="primaryTabs" data-toggleview="foo">
+        <h2>Upcoming Events</h2>
+        <p>Will be Uploaded.</p>
+        <h2>Previous Events</h2>
+        <p>Will be Uploaded.</p>
+      
+    </div>
+
+</div>
+
+<h2>CONTACT DETAILS</h2>
+<div style="padding: 20px">
+
+    <div class="toggle-menu">
+        <div class="toggle-menu-item" data-togglegroup="secondaryTabs" data-toggleid="tabA"><label>North America</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="secondaryTabs" data-toggleid="tabB"><label>South America</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="secondaryTabs" data-toggleid="tabC"><label>Middle East</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="secondaryTabs" data-toggleid="tabD"><label>Asia Pacific</label></div>
+        <div class="toggle-menu-item toggle-menu-item-deactive" data-togglegroup="secondaryTabs" data-toggleid="tabE"><label>India</label></div>
+    </div>
+
+    <div class="d-block" data-togglegroup="secondaryTabs" data-toggleview="tabA">
+        <h1>North America</h1>
+        <P>North America / HQ
+            50 Main Street #1000-1036
+            White Plains, NY 10606
+            New York
+            Tel: +1 914 902 0101
+            info@ecsfin.com</P>
+    </div>
+
+    <div class="d-none" data-togglegroup="secondaryTabs" data-toggleview="tabB">
+        <h1>South America</h1>
+        <P>South America
+            Carrera 13a #89-53
+            Bogota,
+            Colombia
+            Tel: +571 752 5060
+            info@ecsfinlatam.com</P>
+    </div>
+
+    <div class="d-none" data-togglegroup="secondaryTabs" data-toggleview="tabC">
+        <h1>Middle East</h1>
+        <P>Middle East
+            ECSFin Technologies LLC,
+            Level 13, Office #29,
+            Burjuman Business Towers
+            Bur Dubai, UAE
+            Tel : +971 50 8039598
+            sales.me@ecsfin.com</P>
+    </div>
+
+    <div class="d-none" data-togglegroup="secondaryTabs" data-toggleview="tabD">
+        <h1>Asia Pacific</h1>
+        <P>Asia Pacific
+            ECS FIN SDN. BHD
+            Level 16, 1 Sentral, Jalan Stesen
+            Sentral 5, KL Sentral 50470
+            Kuala Lumpur, Malaysia
+            Tel: +603-2092 9525
+            sales@ecsfin.com</P>
+    </div>
+
+    <div class="d-none" data-togglegroup="secondaryTabs" data-toggleview="tabE">
+        <h1>India</h1>
+        <P> India
+            ECS Business Solutions Pvt. Ltd.
+            TC 14/999, Daniel Avenue
+            Vellayambalam, Trivandrum
+            Kerala 695010, India
+            Tel: +91 471 2317318
+            sales@ecsfin.com</P>
+    </div>
+
+</div>
+
+
+
+<!-- slim,min jquery is very helpful -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+<!-- load js -->
+<script src="./simple_tabs.js"></script>
+
+</body>
+</html>

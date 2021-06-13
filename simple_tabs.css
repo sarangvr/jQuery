@@ -1,0 +1,35 @@
+
+.toggle-menu{
+    display: flex;
+}
+
+.toggle-menu-item{
+    padding: 5px 10px;
+    border-left: 1px #eee solid;
+    border-right: 1px #eee solid;
+    border-top: 1px #eee solid;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle-menu-item-deactive{
+    background-color: ghostwhite;
+}
+
+.toggle-menu-item label{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 80%;
+    color:#222;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-none{
+    display: none;
+}
